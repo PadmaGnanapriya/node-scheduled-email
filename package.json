@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "start": "node build/index.js",
+    "postinstall": "tsc && mv -i -v dist/ && rm -v -rf src",
+    "watch-ts": "tsc -w",
     "dev": "nodemon src/index.ts --exec ts-node src/index.ts",
     "compile": "tsc",
     "webpack": "webpack --config webpack.config.ts",
