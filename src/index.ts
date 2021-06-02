@@ -1,5 +1,5 @@
-import express from "express";
-import schedule from 'node-schedule';
+import * as express from "express";
+import * as schedule from 'node-schedule';
 import {sentMail} from "./db/DbRecodeForEmail";
 
 const app = express();
